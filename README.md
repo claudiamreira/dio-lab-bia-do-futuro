@@ -46,8 +46,8 @@ Os dados incluem:
 |---------|---------|-----------|
 | `transacoes.csv` | CSV | Histórico de transações do cliente |
 | `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
+| `perfil_usuario.json` | JSON | Perfil de comportamento financeiro |
+| `estrategias_financeiras.json` | JSON | Ações, dicas e estratégias financeiras |
 
 Essas informações são utilizadas para personalizar as interações e tornar o agente mais assertivo.
 
