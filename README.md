@@ -123,8 +123,8 @@ Estruturei um pitch de apresentação do projeto, abordando:
 │
 ├── 📁 data/                          # Dados mockados para o agente
 │   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
+│   ├── perfil_usuario.json           # Perfil do usuário (JSON)
+│   ├── estrategias_financeiras.json  # Estratégias financeiras inteligentes (JSON)
 │   └── transacoes.csv                # Histórico de transações (CSV)
 │
 ├── 📁 docs/                          # Documentação do projeto
