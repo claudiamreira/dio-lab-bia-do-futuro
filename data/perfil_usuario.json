@@ -1,0 +1,32 @@
+{
+  "nome": "João Silva",
+  "idade": 32,
+  "profissao": "Analista de Sistemas",
+  "renda_mensal": 5000.00,
+
+  "perfil_financeiro": {
+    "nivel_organizacao": "baixo",
+    "controle_gastos": false,
+    "costuma_planejar": false
+  },
+
+  "objetivo_principal": "Controlar gastos e criar uma reserva de emergência",
+
+  "situacao_atual": {
+    "saldo_medio_mensal": 500,
+    "gastos_maiores_categorias": ["alimentacao", "lazer"],
+    "possui_dividas": false
+  },
+
+  "metas": [
+    {
+      "meta": "Criar reserva de emergência",
+      "valor_necessario": 10000.00,
+      "prazo": "2026-06"
+    },
+    {
+      "meta": "Reduzir gastos com lazer",
+      "descricao": "Diminuir despesas com restaurantes e streaming"
+    }
+  ]
+}
