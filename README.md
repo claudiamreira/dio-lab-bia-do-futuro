@@ -38,7 +38,7 @@ Defini diretrizes para evitar alucinações, garantindo que o agente responda ap
 
 ### 📊 2. Base de Conhecimento
 
-Utilizei **dados mockados** disponíveis na pasta [`data/`](./data/) para simular o contexto financeiro do usuário, garantindo consistência nas respostas do agente.
+Adaptei e utilizei os **dados mockados** disponíveis na pasta [`data/`](./data/) para simular o contexto financeiro do usuário, garantindo maior consistência e coerência nas respostas do agente.
 
 Os dados incluem:
 
