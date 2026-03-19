@@ -160,16 +160,41 @@ ESTRATÉGIAS FINANCEIRAS (data/estrategias_financeiras.json):
 
 ## Exemplo de Contexto Montado
 
-> Mostre um exemplo de como os dados são formatados para o agente.
-
+> Exemplo de como os dados são estruturados e enviados ao agente para geração de resposta.
 ```
 Dados do Cliente:
 - Nome: João Silva
-- Perfil: Moderado
-- Saldo disponível: R$ 5.000
+- Idade: 32 anos
+- Profissão: Analista de Sistemas
+- Renda mensal: R$ 5.000
+- Nível de organização financeira: baixo
+- Possui controle de gastos: não
 
-Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
+Situação Atual::
+- Saldo médio mensal: R$ 500
+- Principais categorias de gasto: alimentação, lazer
+- Possui dívidas: não
+
+Metas:
+- Criar reserva de emergência (R$ 10.000 até 2026-06)
+- Reduzir gastos com lazer
+
+Resumo de Gastos (último período):
+- Moradia: R$ 1.380
+- Alimentação: R$ 570
+- Transporte: R$ 295
+- Lazer: R$ 55,90
+- Saúde: R$ 188
+
+Histórico de Interações:
+- Usuário já solicitou ajuda para reduzir gastos com alimentação
+- Já demonstrou dificuldade em controlar despesas mensais
+- Já buscou organizar orçamento
+
+Estratégias Disponíveis:
+- Controle de gastos por categoria
+- Definição de limites mensais
+- Redução gradual de despesas
+- Acompanhamento semanal de gastos
 ...
 ```
