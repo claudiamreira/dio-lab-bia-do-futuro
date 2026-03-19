@@ -56,6 +56,14 @@ with open("data/estrategias_financeiras.json", "r", encoding="utf-8") as f:
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
+Para fins de simplificação, os dados da base de conhecimento são injetados diretamente no prompt, garantindo que o agente tenha acesso ao contexto necessário para gerar respostas mais precisas e personalizadas.
+
+Essa abordagem permite simular o comportamento de um agente contextualizado, utilizando informações estruturadas sobre o usuário, suas transações, histórico de interações e estratégias financeiras.
+
+Em cenários mais robustos, o ideal é que esses dados sejam consultados dinamicamente e incorporados ao prompt de forma seletiva, permitindo maior escalabilidade, flexibilidade e controle sobre o contexto enviado ao modelo.
+
+Abaixo está um exemplo de como os dados são estruturados e utilizados no prompt:
+
 ```
 DADOS DO USUÁRIO (data/perfil_usuario.json):
 {
