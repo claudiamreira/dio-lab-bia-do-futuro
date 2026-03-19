@@ -1,37 +1,46 @@
 # 🤖 Agente Financeiro Inteligente com IA Generativa
 
-## Contexto
+## 💡 Contexto do Projeto
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
+Neste projeto, desenvolvi um **assistente financeiro inteligente** utilizando IA Generativa, com o objetivo de ir além de um chatbot tradicional.
 
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
+A proposta foi criar um agente capaz de:
 
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
-
----
-
-## O Que Você Deve Entregar
-
-### 1. Documentação do Agente
-
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+- **Antecipar necessidades**, não apenas responder perguntas
+- **Personalizar** sugestões com base no contexto de cada usuário
+- **Atuar de forma consultiva na organização financeira**
+- **Garantir segurança** e confiabilidade nas respostas, evitando alucinações
 
 ---
 
-### 2. Base de Conhecimento
+## 🤖 O Que Foi Desenvolvido
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+Ao longo do projeto, idealizei e estruturei um agente financeiro completo, passando pelas seguintes etapas:
+
+### 🧠 1. Documentação do Agente
+
+Caso de uso:
+
+O agente foi projetado para ajudar usuários a controlarem seus gastos, organizarem sua vida financeira e desenvolverem hábitos mais conscientes com o dinheiro.
+
+Persona e tom de voz:
+Criei o **Gus**, um **assistente financeiro inteligente** com comunicação informal, acessível e didático, atuando como um “professor particular” de finanças.
+
+Arquitetura:
+Estruturei o fluxo de interação entre usuário, processamento da IA e geração de respostas baseadas em contexto.
+
+Segurança:
+Defini diretrizes para evitar alucinações, garantindo que o agente responda apenas com base nos dados disponíveis e sinalize quando não houver informação suficiente.
+
+📄 **Documentação:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+
+---
+
+### 📊 2. Base de Conhecimento
+
+Utilizei **dados mockados** disponíveis na pasta [`data/`](./data/) para simular o contexto financeiro do usuário, garantindo consistência nas respostas do agente.
+
+Os dados incluem:
 
 | Arquivo | Formato | Descrição |
 |---------|---------|-----------|
@@ -40,71 +49,68 @@ Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alim
 | `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
 | `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
 
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
+Essas informações são utilizadas para personalizar as interações e tornar o agente mais assertivo.
 
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
-
----
-
-### 3. Prompts do Agente
-
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
+📄 **Documentação:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
 
 ---
 
-### 4. Aplicação Funcional
+### 💬 3. Prompts do Agente
 
-Desenvolva um **protótipo funcional** do seu agente:
+Desenvolvi prompts estruturados para definir o comportamento do Gus, incluindo:
 
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
+- **System Prompt:** Regras, tom de voz e limitações
+- **Exemplos de Interação:** Cenários reais de uso
+- **Tratamento de Edge Cases:** Respostas seguras em situações ambíguas
+
+📄 **Documentação:** [`docs/03-prompts.md`](./docs/03-prompts.md)
+
+---
+
+### 💻 4. Aplicação Funcional
+
+Implementei um **protótipo funcional** do agente, com:
+
+- Interface de chatbot interativo
+- Integração com modelo de linguagem (LLM)
 - Conexão com a base de conhecimento
 
-📁 **Pasta:** [`src/`](./src/)
+📁 **Código:** [`src/`](./src/)
 
 ---
 
-### 5. Avaliação e Métricas
+### 📈 5. Avaliação e Métricas
 
-Descreva como você avalia a qualidade do seu agente:
+Defini critérios para avaliar a qualidade do agente, como:
 
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
+- Precisão das respostas
+- Segurança (redução de alucinações)
+- Coerência com o perfil do usuário
 
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
+📄 **Documentação:** [`docs/04-metricas.md`](./docs/04-metricas.md)
 
 ---
 
-## Ferramentas Sugeridas
+### 🎤 6. Pitch
 
-Todas as ferramentas abaixo possuem versões gratuitas:
+Estruturei um pitch de apresentação do projeto, abordando:
+
+- Problema resolvido
+- Funcionamento do agente
+- Diferenciais da solução
+
+📄 **Roteiro:** [`docs/05-pitch.md`](./docs/05-pitch.md)
+
+---
+
+## Ferramentas Utilizadas
 
 | Categoria | Ferramentas |
 |-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
+| **LLMs** | [ChatGPT](https://chat.openai.com/) |
+| **Desenvolvimento** | [Google Colab](https://colab.research.google.com/) |
 | **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
+| **Diagramas** | [Mermaid](https://mermaid.js.org/) |
 
 ---
 
@@ -140,10 +146,17 @@ Todas as ferramentas abaixo possuem versões gratuitas:
 
 ---
 
-## Dicas Finais
+## 🚀 Diferencial do Projeto
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+O principal diferencial deste agente está na combinação de:
+
+- Personalização baseada em dados
+- Comunicação humanizada
+- Foco em educação financeira prática
+- Preocupação com segurança e confiabilidade
+  
+---
+
+## ✨ Considerações Finais
+
+Este projeto demonstra a construção de um agente financeiro completo, desde a concepção até a prototipação, aplicando boas práticas de engenharia de prompt, uso de dados e experiência do usuário.
