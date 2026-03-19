@@ -196,5 +196,8 @@ Estratégias Disponíveis:
 - Definição de limites mensais
 - Redução gradual de despesas
 - Acompanhamento semanal de gastos
-...
+```
+**Entrada do Usuário:**
+``` 
+"Como posso economizar mais no fim do mês?"
 ```
