@@ -1,0 +1,32 @@
+[
+  {
+    "nome": "Controle de gastos por categoria",
+    "descricao": "Separar seus gastos por categorias para entender para onde seu dinheiro está indo",
+    "quando_usar": "Quando o usuário não tem clareza sobre seus gastos",
+    "beneficio": "Maior controle financeiro e identificação de excessos"
+  },
+  {
+    "nome": "Definir limite de gastos mensais",
+    "descricao": "Estabelecer um valor máximo para cada categoria de gasto",
+    "quando_usar": "Quando o usuário gasta mais do que deveria",
+    "beneficio": "Evita descontrole financeiro e ajuda a economizar"
+  },
+  {
+    "nome": "Redução gradual de despesas",
+    "descricao": "Diminuir gastos aos poucos ao invés de cortar tudo de uma vez",
+    "quando_usar": "Quando há excesso em categorias como lazer ou alimentação",
+    "beneficio": "Mudança sustentável de hábitos"
+  },
+  {
+    "nome": "Criação de reserva de emergência",
+    "descricao": "Guardar uma parte do dinheiro mensalmente para imprevistos",
+    "quando_usar": "Quando o usuário não possui segurança financeira",
+    "beneficio": "Maior tranquilidade em situações inesperadas"
+  },
+  {
+    "nome": "Acompanhamento semanal de gastos",
+    "descricao": "Revisar gastos semanalmente para evitar surpresas no fim do mês",
+    "quando_usar": "Para manter controle contínuo",
+    "beneficio": "Maior previsibilidade financeira"
+  }
+]
