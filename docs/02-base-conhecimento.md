@@ -56,7 +56,97 @@ with open("data/estrategias_financeiras.json", "r", encoding="utf-8") as f:
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+```
+DADOS DO USUÁRIO (data/perfil_usuario.json):
+{
+  "nome": "João Silva",
+  "idade": 32,
+  "profissao": "Analista de Sistemas",
+  "renda_mensal": 5000.00,
+
+  "perfil_financeiro": {
+    "nivel_organizacao": "baixo",
+    "controle_gastos": false,
+    "costuma_planejar": false
+  },
+
+  "objetivo_principal": "Controlar gastos e criar uma reserva de emergência",
+
+  "situacao_atual": {
+    "saldo_medio_mensal": 500,
+    "gastos_maiores_categorias": ["alimentacao", "lazer"],
+    "possui_dividas": false
+  },
+
+  "metas": [
+    {
+      "meta": "Criar reserva de emergência",
+      "valor_necessario": 10000.00,
+      "prazo": "2026-06"
+    },
+    {
+      "meta": "Reduzir gastos com lazer",
+      "descricao": "Diminuir despesas com restaurantes e streaming"
+    }
+  ]
+}
+
+TRANSAÇÕES DO USUÁRIO (data/transacoes.csv):
+data,descricao,categoria,valor,tipo
+2025-10-01,Salário,receita,5000.00,entrada
+2025-10-02,Aluguel,moradia,1200.00,saida
+2025-10-03,Supermercado,alimentacao,450.00,saida
+2025-10-05,Netflix,lazer,55.90,saida
+2025-10-07,Farmácia,saude,89.00,saida
+2025-10-10,Restaurante,alimentacao,120.00,saida
+2025-10-12,Uber,transporte,45.00,saida
+2025-10-15,Conta de Luz,moradia,180.00,saida
+2025-10-20,Academia,saude,99.00,saida
+2025-10-25,Combustível,transporte,250.00,saida
+
+HISTÓRICO DE ATENDIMENTO DO USUÁRIO (data/historico_atendimento.csv):
+data,canal,tema,resumo,resolvido
+2025-09-15,chat,Gastos com alimentação,Cliente pediu ajuda para reduzir gastos com delivery,sim
+2025-09-22,chat,Controle financeiro,Cliente não sabia para onde o dinheiro estava indo,sim
+2025-10-01,chat,Gastos com lazer,Cliente percebeu excesso em streaming e restaurantes,sim
+2025-10-12,chat,Metas financeiras,Cliente quer criar meta de economia mensal,sim
+2025-10-18,chat,Orçamento mensal,Cliente pediu ajuda para organizar orçamento,sim
+2025-10-25,chat,Controle de gastos,Cliente quer acompanhar despesas no dia a dia,sim
+
+ESTRATÉGIAS FINANCEIRAS (data/estrategias_financeiras.json):
+[
+  {
+    "nome": "Controle de gastos por categoria",
+    "descricao": "Separar seus gastos por categorias para entender para onde seu dinheiro está indo",
+    "quando_usar": "Quando o usuário não tem clareza sobre seus gastos",
+    "beneficio": "Maior controle financeiro e identificação de excessos"
+  },
+  {
+    "nome": "Definir limite de gastos mensais",
+    "descricao": "Estabelecer um valor máximo para cada categoria de gasto",
+    "quando_usar": "Quando o usuário gasta mais do que deveria",
+    "beneficio": "Evita descontrole financeiro e ajuda a economizar"
+  },
+  {
+    "nome": "Redução gradual de despesas",
+    "descricao": "Diminuir gastos aos poucos ao invés de cortar tudo de uma vez",
+    "quando_usar": "Quando há excesso em categorias como lazer ou alimentação",
+    "beneficio": "Mudança sustentável de hábitos"
+  },
+  {
+    "nome": "Criação de reserva de emergência",
+    "descricao": "Guardar uma parte do dinheiro mensalmente para imprevistos",
+    "quando_usar": "Quando o usuário não possui segurança financeira",
+    "beneficio": "Maior tranquilidade em situações inesperadas"
+  },
+  {
+    "nome": "Acompanhamento semanal de gastos",
+    "descricao": "Revisar gastos semanalmente para evitar surpresas no fim do mês",
+    "quando_usar": "Para manter controle contínuo",
+    "beneficio": "Maior previsibilidade financeira"
+  }
+]
+```
 
 ---
 
