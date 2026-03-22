@@ -113,12 +113,12 @@ data,descricao,categoria,valor,tipo
 
 HISTÓRICO DE ATENDIMENTO DO USUÁRIO (data/historico_atendimento.csv):
 data,canal,tema,resumo,resolvido
-2025-09-15,chat,Gastos com alimentação,Cliente pediu ajuda para reduzir gastos com delivery,sim
-2025-09-22,chat,Controle financeiro,Cliente não sabia para onde o dinheiro estava indo,sim
-2025-10-01,chat,Gastos com lazer,Cliente percebeu excesso em streaming e restaurantes,sim
-2025-10-12,chat,Metas financeiras,Cliente quer criar meta de economia mensal,sim
-2025-10-18,chat,Orçamento mensal,Cliente pediu ajuda para organizar orçamento,sim
-2025-10-25,chat,Controle de gastos,Cliente quer acompanhar despesas no dia a dia,sim
+2025-09-15,chat,Gastos com alimentação,Usuário pediu ajuda para reduzir gastos com delivery,sim
+2025-09-22,chat,Controle financeiro,Usuário não sabia para onde o dinheiro estava indo,sim
+2025-10-01,chat,Gastos com lazer,Usuário percebeu excesso em streaming e restaurantes,sim
+2025-10-12,chat,Metas financeiras,Usuário quer criar meta de economia mensal,sim
+2025-10-18,chat,Orçamento mensal,Usuário pediu ajuda para organizar orçamento,sim
+2025-10-25,chat,Controle de gastos,Usuário quer acompanhar despesas no dia a dia,sim
 
 ESTRATÉGIAS FINANCEIRAS (data/estrategias_financeiras.json):
 [
@@ -160,7 +160,9 @@ ESTRATÉGIAS FINANCEIRAS (data/estrategias_financeiras.json):
 ## Exemplo de Contexto Montado
 
 ```
-Dados do Cliente:
+Contexto do Usuário:
+
+PERFIL
 - Nome: João Silva
 - Idade: 32 anos
 - Profissão: Analista de Sistemas
@@ -168,7 +170,7 @@ Dados do Cliente:
 - Nível de organização financeira: baixo
 - Possui controle de gastos: não
 
-Situação Atual::
+Situação Atual:
 - Saldo médio mensal: R$ 500
 - Principais categorias de gasto: alimentação, lazer
 - Possui dívidas: não
