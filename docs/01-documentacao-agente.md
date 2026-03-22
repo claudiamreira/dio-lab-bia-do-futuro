@@ -77,10 +77,10 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [Chatbot] |
-| LLM | [modelo via API (ex: GPT)] |
-| Base de Conhecimento | [JSON/CSV com dados do cliente] |
-| Validação | [Checagem de alucinações] |
+| Interface | Chatbot interativo |
+| LLM | Modelo via API (ex: GPT) |
+| Base de Conhecimento | Arquivos JSON/CSV com dados do usuário |
+| Validação | Camada de controle para evitar alucinações |
 
 ---
 
