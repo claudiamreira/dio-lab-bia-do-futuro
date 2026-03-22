@@ -15,9 +15,7 @@
 
 ## Adaptações nos Dados
 
-> Você modificou ou expandiu os dados mockados? Descreva aqui.
-
-Os dados mockados foram adaptados para refletir o contexto do agente Gus, que tem como foco o controle de gastos e a educação financeira.
+Os dados mockados foram adaptados para refletir o contexto da **FIA (Financial Intelligent Assistant)**, com foco em controle de gastos e educação financeira.
 
 Foram realizadas as seguintes alterações:
 
@@ -26,16 +24,18 @@ Foram realizadas as seguintes alterações:
 - Transformação de `produtos_financeiros.json` em `estrategias_financeiras.json`, contendo ações e boas práticas ao invés de produtos bancários  
 - Manutenção e uso do `transacoes.csv` para análise de padrões de consumo  
 
-Essas adaptações permitem que o agente gere respostas mais consistentes, contextualizadas e alinhadas ao comportamento financeiro do usuário.
+Essas adaptações permitem que a FIA gere respostas mais consistentes, contextualizadas e alinhadas ao comportamento financeiro do usuário.
 
 ---
 
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
 
-Existem duas possibilidades, injetar os dados diretamente no prompt (Ctrl C + Ctrl V) ou carregar os arquivos via código, como no exemplo abaixo.
+Os dados podem ser integrados de duas formas:
+
+- Injeção direta no prompt (para prototipagem e validação do agente)  
+- Carregamento via código, permitindo maior escalabilidade e reutilização
 
 ```
 import pandas as pd
@@ -54,9 +54,8 @@ with open("data/estrategias_financeiras.json", "r", encoding="utf-8") as f:
 ```
 
 ### Como os dados são usados no prompt?
-> Os dados vão no system prompt? São consultados dinamicamente?
 
-Para fins de simplificação, os dados da base de conhecimento são injetados diretamente no prompt, garantindo que o agente tenha acesso ao contexto necessário para gerar respostas mais precisas e personalizadas.
+Para fins de simplificação, os dados da base de conhecimento são injetados diretamente no prompt, garantindo que a **FIA** tenha acesso ao contexto necessário para gerar respostas mais precisas e personalizadas.
 
 Essa abordagem permite simular o comportamento de um agente contextualizado, utilizando informações estruturadas sobre o usuário, suas transações, histórico de interações e estratégias financeiras.
 
@@ -160,7 +159,6 @@ ESTRATÉGIAS FINANCEIRAS (data/estrategias_financeiras.json):
 
 ## Exemplo de Contexto Montado
 
-> Exemplo de como os dados são estruturados e enviados ao agente para geração de resposta.
 ```
 Dados do Cliente:
 - Nome: João Silva
