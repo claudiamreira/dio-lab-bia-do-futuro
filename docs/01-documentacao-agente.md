@@ -12,7 +12,7 @@
 Principais funcionalidades:
 - Organização de gastos
 - Planejamento de metas financeiras
-- Sugestões básicas de economia
+- Sugestões práticas de economia
 - Alertas sobre hábitos financeiros
 
 ### Público-Alvo
@@ -78,7 +78,7 @@ flowchart TD
 | Componente | Descrição |
 |------------|-----------|
 | Interface | [Chatbot] |
-| LLM | [GPT-4 via API] |
+| LLM | [modelo via API (ex: GPT)] |
 | Base de Conhecimento | [JSON/CSV com dados do cliente] |
 | Validação | [Checagem de alucinações] |
 
