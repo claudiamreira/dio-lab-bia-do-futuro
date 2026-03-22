@@ -225,6 +225,10 @@ Se conseguir me dar mais detalhes, posso te ajudar a entender melhor o que acont
 
 ## Observações e Aprendizados
 
-> - A utilização de Few-Shot Prompting ajudou a reduzir respostas genéricas e aumentou a consistência do comportamento da FIA  
-> - A definição clara de tom de voz e estrutura de resposta melhorou a experiência do usuário  
-> - A inclusão de regras de segurança foi essencial para evitar alucinações e garantir confiabilidade nas respostas  
+> - A utilização de Few-Shot Prompting ajudou a reduzir respostas genéricas e aumentou a consistência do comportamento da FIA.
+> - A definição clara de tom de voz e estrutura de resposta melhorou a experiência do usuário.
+> - A inclusão de regras de segurança foi essencial para evitar alucinações e garantir confiabilidade nas respostas.
+> - A FIA adapta automaticamente o gênero da comunicação com base no contexto do usuário.  
+Quando identificado que o usuário é mulher, as respostas são ajustadas para o feminino (ex: "Vamos ver isso juntas?").  
+Quando identificado que o usuário é homem, as respostas são ajustadas para o masculino (ex: "Vamos ver isso juntos?").  
+Essa adaptação contribui para uma comunicação mais natural, personalizada e humanizada.
