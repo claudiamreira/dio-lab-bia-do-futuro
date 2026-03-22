@@ -2,14 +2,14 @@
 
 ## 💡 Contexto do Projeto
 
-Neste projeto, desenvolvi um **assistente financeiro inteligente** utilizando IA Generativa, com o objetivo de ir além de um chatbot tradicional.
+Neste projeto, desenvolvi a **FIA (Financial Intelligent Assistant)**, uma assistente financeira inteligente baseada em IA Generativa, com o objetivo de ir além de um chatbot tradicional.
 
 A proposta foi criar um agente capaz de:
 
 - **Antecipar necessidades**, não apenas responder perguntas
 - **Personalizar** sugestões com base no contexto de cada usuário
-- **Atuar de forma consultiva na organização financeira**
-- **Garantir segurança** e confiabilidade nas respostas, evitando alucinações
+- **Atuar de forma consultiva** na organização financeira
+- **Garantir segurança e confiabilidade** nas respostas, evitando alucinações
 
 ---
 
@@ -21,10 +21,10 @@ Ao longo do projeto, idealizei e estruturei um agente financeiro completo, passa
 
 Caso de uso:
 
-O agente foi projetado para ajudar usuários a controlarem seus gastos, organizarem sua vida financeira e desenvolverem hábitos mais conscientes com o dinheiro.
+A FIA foi projetada para ajudar usuários a controlarem seus gastos, organizarem sua vida financeira e desenvolverem hábitos mais conscientes com o dinheiro.
 
 Persona e tom de voz:
-Criei o **Gus**, um **assistente financeiro inteligente** com comunicação informal, acessível e didático, atuando como um “professor particular” de finanças.
+A FIA atua como uma **assistente financeira inteligente**, com comunicação informal, acessível e didática, assumindo o papel de uma “professora particular” de finanças.
 
 Arquitetura:
 Estruturei o fluxo de interação entre usuário, processamento da IA e geração de respostas baseadas em contexto.
@@ -38,7 +38,7 @@ Defini diretrizes para evitar alucinações, garantindo que o agente responda ap
 
 ### 📊 2. Base de Conhecimento
 
-Adaptei e utilizei os **dados mockados** disponíveis na pasta [`data/`](./data/) para simular o contexto financeiro do usuário, garantindo maior consistência e coerência nas respostas do agente.
+Adaptei e utilizei os **dados mockados** disponíveis na pasta [`data/`](./data/), ajustando-os ao contexto da FIA para simular o cenário financeiro do usuário.
 
 Os dados incluem:
 
@@ -57,7 +57,7 @@ Essas informações são utilizadas para personalizar as interações e tornar o
 
 ### 💬 3. Prompts do Agente
 
-Desenvolvi prompts estruturados para definir o comportamento do Gus, incluindo:
+Desenvolvi prompts estruturados para definir o comportamento da FIA, incluindo:
 
 - **System Prompt:** Regras, tom de voz e limitações
 - **Exemplos de Interação:** Cenários reais de uso
@@ -69,7 +69,7 @@ Desenvolvi prompts estruturados para definir o comportamento do Gus, incluindo:
 
 ### 💻 4. Aplicação Funcional
 
-Implementei um **protótipo funcional** do agente, com:
+Implementei um **protótipo funcional** da FIA, com:
 
 - Interface de chatbot interativo
 - Integração com modelo de linguagem (LLM)
@@ -148,7 +148,7 @@ Estruturei um pitch de apresentação do projeto, abordando:
 
 ## 🚀 Diferencial do Projeto
 
-O principal diferencial deste agente está na combinação de:
+O principal diferencial da FIA está na combinação de:
 
 - Personalização baseada em dados
 - Comunicação humanizada
