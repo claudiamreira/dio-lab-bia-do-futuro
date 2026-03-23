@@ -1,7 +1,7 @@
 data,canal,tema,resumo,estrategia_sugerida,perfil_detectado,resolvido
-2025-09-15,chat,Gastos com alimentação,Cliente pediu ajuda para reduzir despesas com delivery e alimentação fora de casa,Redução gradual de despesas,usuario_com_excesso_em_delivery,sim
-2025-09-22,chat,Controle financeiro,Cliente relatou dificuldade para identificar para onde o dinheiro estava indo ao longo do mês,Controle de gastos por categoria,usuario_sem_clareza_financeira,sim
-2025-10-01,chat,Gastos com lazer,Cliente percebeu excesso de gastos com streaming, restaurantes e outras despesas de lazer,Identificação de gastos supérfluos,usuario_com_gastos_desnecessarios,sim
-2025-10-12,chat,Metas financeiras,Cliente demonstrou interesse em criar uma meta de economia mensal para melhorar sua organização financeira,Definição de meta de economia mensal,usuario_sem_meta_financeira,sim
-2025-10-18,chat,Orçamento mensal,Cliente pediu apoio para estruturar um orçamento mensal mais equilibrado e funcional,Organização entre gastos fixos e variáveis,usuario_sem_planejamento,sim
-2025-10-25,chat,Controle de gastos,Cliente solicitou orientação para acompanhar as despesas do dia a dia com mais frequência,Acompanhamento semanal de gastos,usuario_em_reeducacao_financeira,sim
+2025-09-15,chat,Gastos com alimentação,"Cliente pediu ajuda para reduzir despesas com delivery e alimentação fora de casa",Redução gradual de despesas,usuario_com_excesso_em_delivery,sim
+2025-09-22,chat,Controle financeiro,"Cliente relatou dificuldade para identificar para onde o dinheiro estava indo ao longo do mês",Controle de gastos por categoria,usuario_sem_clareza_financeira,sim
+2025-10-01,chat,Gastos com lazer,"Cliente percebeu excesso de gastos com streaming, restaurantes e outras despesas de lazer",Identificação de gastos supérfluos,usuario_com_gastos_desnecessarios,sim
+2025-10-12,chat,Metas financeiras,"Cliente demonstrou interesse em criar uma meta de economia mensal para melhorar sua organização financeira",Definição de meta de economia mensal,usuario_sem_meta_financeira,sim
+2025-10-18,chat,Orçamento mensal,"Cliente pediu apoio para estruturar um orçamento mensal mais equilibrado e funcional",Organização entre gastos fixos e variáveis,usuario_sem_planejamento,sim
+2025-10-25,chat,Controle de gastos,"Cliente solicitou orientação para acompanhar as despesas do dia a dia com mais frequência",Acompanhamento semanal de gastos,usuario_em_reeducacao_financeira,sim
