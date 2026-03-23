@@ -1,32 +1,83 @@
 [
   {
     "nome": "Controle de gastos por categoria",
-    "descricao": "Separar seus gastos por categorias para entender para onde seu dinheiro está indo",
-    "quando_usar": "Quando o usuário não tem clareza sobre seus gastos",
-    "beneficio": "Maior controle financeiro e identificação de excessos"
+    "descricao": "Organizar os gastos em categorias para entender com clareza para onde o dinheiro está indo.",
+    "quando_usar": "Quando o usuário não tem visibilidade sobre os próprios gastos ou sente que o dinheiro acaba sem explicação.",
+    "beneficio": "Ajuda a identificar excessos, melhorar o planejamento e aumentar o controle financeiro.",
+    "prioridade": "alta",
+    "perfil_ideal": ["usuario_desorganizado", "usuario_sem_clareza_financeira"],
+    "exemplo_pratico": "Separar as despesas do mês em categorias como alimentação, transporte, moradia, contas fixas e lazer."
   },
   {
     "nome": "Definir limite de gastos mensais",
-    "descricao": "Estabelecer um valor máximo para cada categoria de gasto",
-    "quando_usar": "Quando o usuário gasta mais do que deveria",
-    "beneficio": "Evita descontrole financeiro e ajuda a economizar"
+    "descricao": "Estabelecer um valor máximo de gasto para cada categoria do orçamento mensal.",
+    "quando_usar": "Quando o usuário costuma gastar acima do planejado ou tem dificuldade para manter disciplina financeira.",
+    "beneficio": "Evita descontrole, facilita decisões de consumo e contribui para a economia no fim do mês.",
+    "prioridade": "alta",
+    "perfil_ideal": ["usuario_com_excesso_de_gastos", "usuario_com_dificuldade_de_controle"],
+    "exemplo_pratico": "Definir um teto de R$ 500 para lazer e R$ 800 para alimentação fora de casa no mês."
   },
   {
     "nome": "Redução gradual de despesas",
-    "descricao": "Diminuir gastos aos poucos ao invés de cortar tudo de uma vez",
-    "quando_usar": "Quando há excesso em categorias como lazer ou alimentação",
-    "beneficio": "Mudança sustentável de hábitos"
+    "descricao": "Diminuir gastos aos poucos, de forma realista, em vez de fazer cortes bruscos difíceis de manter.",
+    "quando_usar": "Quando o usuário tem gastos elevados em categorias como lazer, delivery ou compras não essenciais.",
+    "beneficio": "Promove mudança sustentável de hábitos sem gerar sensação de restrição extrema.",
+    "prioridade": "media",
+    "perfil_ideal": ["usuario_com_gastos_impulsivos", "usuario_com_excesso_em_lazer"],
+    "exemplo_pratico": "Reduzir pedidos de delivery de 4 vezes por semana para 2, antes de tentar cortar totalmente."
   },
   {
     "nome": "Criação de reserva de emergência",
-    "descricao": "Guardar uma parte do dinheiro mensalmente para imprevistos",
-    "quando_usar": "Quando o usuário não possui segurança financeira",
-    "beneficio": "Maior tranquilidade em situações inesperadas"
+    "descricao": "Separar mensalmente uma parte do dinheiro para formar uma reserva destinada a imprevistos.",
+    "quando_usar": "Quando o usuário não possui proteção financeira para emergências, como problemas de saúde, desemprego ou despesas inesperadas.",
+    "beneficio": "Aumenta a segurança financeira e reduz a necessidade de recorrer a dívidas em situações inesperadas.",
+    "prioridade": "alta",
+    "perfil_ideal": ["usuario_sem_reserva", "usuario_financeiramente_vulneravel"],
+    "exemplo_pratico": "Guardar 10% da renda mensal ou um valor fixo, como R$ 100 por mês, até formar uma reserva inicial."
   },
   {
     "nome": "Acompanhamento semanal de gastos",
-    "descricao": "Revisar gastos semanalmente para evitar surpresas no fim do mês",
-    "quando_usar": "Para manter controle contínuo",
-    "beneficio": "Maior previsibilidade financeira"
+    "descricao": "Revisar os gastos uma vez por semana para acompanhar a evolução do orçamento ao longo do mês.",
+    "quando_usar": "Quando o usuário quer manter controle contínuo e evitar surpresas no fechamento do mês.",
+    "beneficio": "Melhora a previsibilidade financeira e permite corrigir excessos antes que se tornem um problema maior.",
+    "prioridade": "media",
+    "perfil_ideal": ["usuario_que_quer_constancia", "usuario_em_reeducacao_financeira"],
+    "exemplo_pratico": "Reservar 15 minutos todo domingo para revisar quanto foi gasto em cada categoria durante a semana."
+  },
+  {
+    "nome": "Identificação de gastos supérfluos",
+    "descricao": "Analisar despesas que podem ser reduzidas ou eliminadas sem comprometer necessidades essenciais.",
+    "quando_usar": "Quando o usuário deseja economizar, mas não sabe exatamente onde pode cortar gastos.",
+    "beneficio": "Facilita a economia de forma prática e ajuda a redirecionar dinheiro para objetivos mais importantes.",
+    "prioridade": "alta",
+    "perfil_ideal": ["usuario_quer_economizar", "usuario_com_gastos_desnecessarios"],
+    "exemplo_pratico": "Revisar assinaturas pouco utilizadas, compras por impulso e pequenos gastos recorrentes."
+  },
+  {
+    "nome": "Organização entre gastos fixos e variáveis",
+    "descricao": "Separar despesas obrigatórias das despesas que mudam ao longo do mês.",
+    "quando_usar": "Quando o usuário precisa entender melhor quais gastos são essenciais e quais têm maior margem de ajuste.",
+    "beneficio": "Melhora a visão do orçamento e ajuda a tomar decisões mais conscientes sobre cortes e planejamento.",
+    "prioridade": "alta",
+    "perfil_ideal": ["usuario_iniciante", "usuario_sem_planejamento"],
+    "exemplo_pratico": "Classificar aluguel, internet e energia como gastos fixos, e lazer, compras e delivery como gastos variáveis."
+  },
+  {
+    "nome": "Definição de meta de economia mensal",
+    "descricao": "Estabelecer um valor ou percentual da renda para poupar todos os meses.",
+    "quando_usar": "Quando o usuário quer criar o hábito de guardar dinheiro, mas ainda não possui uma meta clara.",
+    "beneficio": "Estimula constância, fortalece o planejamento financeiro e ajuda na conquista de objetivos futuros.",
+    "prioridade": "media",
+    "perfil_ideal": ["usuario_quer_guardar_dinheiro", "usuario_sem_meta_financeira"],
+    "exemplo_pratico": "Definir a meta de economizar 5% da renda mensal ou guardar R$ 200 por mês."
+  },
+  {
+    "nome": "Priorização de quitação de dívidas",
+    "descricao": "Organizar dívidas por urgência, valor ou juros para definir uma estratégia de pagamento mais eficiente.",
+    "quando_usar": "Quando o usuário possui dívidas em aberto e precisa decidir por onde começar.",
+    "beneficio": "Reduz o risco de inadimplência, diminui o impacto dos juros e melhora a recuperação financeira.",
+    "prioridade": "alta",
+    "perfil_ideal": ["usuario_endividado", "usuario_com_juros_altos"],
+    "exemplo_pratico": "Começar pagando primeiro as dívidas com juros mais altos, como cartão de crédito ou cheque especial."
   }
 ]
