@@ -1,46 +1,94 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🤖 FIA — Agente Financeiro Inteligente com IA Generativa
 
-## 💡 Contexto do Projeto
+A **FIA (Financial Intelligence Assistant)** é uma assistente financeira desenvolvida com foco em **organização financeira, personalização e segurança nas respostas**.
 
-Neste projeto, desenvolvi a **FIA (Financial Intelligent Assistant)**, uma assistente financeira inteligente baseada em IA Generativa, com o objetivo de ir além de um chatbot tradicional.
-
-A proposta foi criar um agente capaz de:
-
-- **Antecipar necessidades**, não apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada usuário
-- **Atuar de forma consultiva** na organização financeira
-- **Garantir segurança e confiabilidade** nas respostas, evitando alucinações
+Mais do que um chatbot tradicional, a proposta deste projeto é simular um agente capaz de interpretar contexto, sugerir estratégias práticas e apoiar o usuário na construção de hábitos financeiros mais conscientes, utilizando **IA generativa** e uma **base de conhecimento estruturada**.
 
 ---
 
-## 🤖 O Que Foi Desenvolvido
+## 💡 Objetivo do Projeto
 
-Ao longo do projeto, idealizei e estruturei um agente financeiro completo, passando pelas seguintes etapas:
+Este projeto foi criado com o objetivo de desenvolver uma assistente financeira inteligente capaz de:
 
-### 🧠 1. Documentação do Agente
+- Antecipar necessidades do usuário, e não apenas responder perguntas
+- Personalizar sugestões com base em contexto e perfil financeiro
+- Atuar de forma consultiva na organização da vida financeira
+- Garantir respostas mais seguras e confiáveis, reduzindo alucinações
 
-Caso de uso:
+---
 
-A FIA foi projetada para ajudar usuários a controlarem seus gastos, organizarem sua vida financeira e desenvolverem hábitos mais conscientes com o dinheiro.
+## ✨ Funcionalidades
 
-Persona e tom de voz:
-A FIA atua como uma **assistente financeira inteligente**, com comunicação informal, acessível e didática, assumindo o papel de uma “professora particular” de finanças.
+A FIA foi idealizada para oferecer:
 
-Arquitetura:
-Estruturei o fluxo de interação entre usuário, processamento da IA e geração de respostas baseadas em contexto.
+- Análise de transações financeiras mockadas
+- Sugestões personalizadas com base no perfil do usuário
+- Respostas contextualizadas com histórico de atendimento
+- Orientações financeiras em linguagem simples e didática
+- Tratamento seguro para cenários ambíguos ou com falta de informação
 
-Segurança:
-Defini diretrizes para evitar alucinações, garantindo que o agente responda apenas com base nos dados disponíveis e sinalize quando não houver informação suficiente.
+---
+
+## 🧠 O Que Foi Desenvolvido
+
+O projeto foi estruturado em cinco frentes principais:
+
+### 1. Documentação do Agente
+Definição do caso de uso, persona, tom de voz, arquitetura e diretrizes de segurança da FIA.
 
 📄 **Documentação:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
 
 ---
 
-### 📊 2. Base de Conhecimento
+### 2. Base de Conhecimento
+Construção de uma base com dados mockados para simular o contexto financeiro do usuário e permitir respostas mais personalizadas.
 
-Adaptei e utilizei os **dados mockados** disponíveis na pasta [`data/`](./data/), ajustando-os ao contexto da FIA para simular o cenário financeiro do usuário.
+📄 **Documentação:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
 
-Os dados incluem:
+---
+
+### 3. Prompts do Agente
+Desenvolvimento dos prompts que orientam comportamento, tom de voz, limites e exemplos de interação da assistente.
+
+📄 **Documentação:** [`docs/03-prompts.md`](./docs/03-prompts.md)
+
+---
+
+### 4. Aplicação Funcional
+Desenvolvimento de um protótipo funcional com interface de chatbot, integração com modelo de linguagem e conexão com a base de conhecimento.
+
+📁 **Código:** [`src/`](./src/)
+
+---
+
+### 5. Avaliação e Métricas
+Definição de critérios para avaliar qualidade, segurança e coerência das respostas geradas.
+
+📄 **Documentação:** [`docs/04-metricas.md`](./docs/04-metricas.md)
+
+---
+
+### 6. Pitch do Projeto
+Estruturação de um roteiro de apresentação destacando problema, solução e diferenciais da FIA.
+
+📄 **Roteiro:** [`docs/05-pitch.md`](./docs/05-pitch.md)
+
+---
+
+## 🔄 Fluxo da Solução
+
+O funcionamento da FIA segue a seguinte lógica:
+
+1. O usuário envia uma pergunta ou solicitação
+2. A aplicação consulta os dados disponíveis na base de conhecimento
+3. O modelo interpreta o contexto com base no perfil e histórico do usuário
+4. A FIA gera uma resposta personalizada, didática e segura
+
+---
+
+## 🗂️ Base de Conhecimento
+
+Os dados utilizados no projeto estão organizados na pasta [`data/`](./data/) e simulam informações relevantes para o contexto financeiro do usuário.
 
 | Arquivo | Formato | Descrição |
 |---------|---------|-----------|
@@ -49,114 +97,106 @@ Os dados incluem:
 | `perfil_usuario.json` | JSON | Perfil de comportamento financeiro |
 | `estrategias_financeiras.json` | JSON | Ações, dicas e estratégias financeiras |
 
-Essas informações são utilizadas para personalizar as interações e tornar o agente mais assertivo.
-
-📄 **Documentação:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+Essas informações ajudam a tornar as interações mais contextualizadas e assertivas.
 
 ---
 
-### 💬 3. Prompts do Agente
-
-Desenvolvi prompts estruturados para definir o comportamento da FIA, incluindo:
-
-- **System Prompt:** Regras, tom de voz e limitações
-- **Exemplos de Interação:** Cenários reais de uso
-- **Tratamento de Edge Cases:** Respostas seguras em situações ambíguas
-
-📄 **Documentação:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 💻 4. Aplicação Funcional
-
-Implementei um **protótipo funcional** da FIA, com:
-
-- Interface de chatbot interativo
-- Integração com modelo de linguagem (LLM)
-- Conexão com a base de conhecimento
-
-📁 **Código:** [`src/`](./src/)
-
----
-
-### 📈 5. Avaliação e Métricas
-
-Defini critérios para avaliar a qualidade do agente, como:
-
-- Precisão das respostas
-- Segurança (redução de alucinações)
-- Coerência com o perfil do usuário
-
-📄 **Documentação:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 🎤 6. Pitch
-
-Estruturei um pitch de apresentação do projeto, abordando:
-
-- Problema resolvido
-- Funcionamento do agente
-- Diferenciais da solução
-
-📄 **Roteiro:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Utilizadas
+## 🛠️ Tecnologias e Ferramentas
 
 | Categoria | Ferramentas |
 |-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/) |
-| **Desenvolvimento** | [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/) |
+| **LLM** | ChatGPT |
+| **Desenvolvimento** | Google Colab, Python |
+| **Estruturação e experimentação** | LangChain, LangFlow, CrewAI |
+| **Diagramas** | Mermaid |
+
+> **Observação:** algumas ferramentas foram utilizadas para apoio na estruturação, exploração de arquitetura e organização do projeto.
 
 ---
 
-## Estrutura do Repositório
+## 📁 Estrutura do Repositório
 
-```
-📁 lab-agente-financeiro/
+```bash
+lab-agente-financeiro/
 │
-├── 📄 README.md
+├── README.md
 │
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_usuario.json           # Perfil do usuário (JSON)
-│   ├── estrategias_financeiras.json  # Estratégias financeiras inteligentes (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
+├── data/
+│   ├── historico_atendimento.csv
+│   ├── perfil_usuario.json
+│   ├── estrategias_financeiras.json
+│   └── transacoes.csv
 │
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
+├── docs/
+│   ├── 01-documentacao-agente.md
+│   ├── 02-base-conhecimento.md
+│   ├── 03-prompts.md
+│   ├── 04-metricas.md
+│   └── 05-pitch.md
 │
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
+├── src/
+│   └── app.py
 │
-├── 📁 assets/                        # Imagens e diagramas
+├── assets/
 │   └── ...
 │
-└── 📁 examples/                      # Referências e exemplos
+└── examples/
     └── README.md
 ```
 
----
+## ▶️ Como Executar o Projeto
 
-## 🚀 Diferencial do Projeto
+> Ajuste esta seção conforme a estrutura real do seu projeto.
 
-O principal diferencial da FIA está na combinação de:
+### Pré-requisitos
+- Python 3.10 ou superior
+- Ambiente com suporte à instalação de dependências
+- Chave de API do modelo de linguagem, se aplicável
 
-- Personalização baseada em dados
-- Comunicação humanizada
-- Foco em educação financeira prática
-- Preocupação com segurança e confiabilidade
-  
----
+### Instalação
 
-## ✨ Considerações Finais
+```
+bash
+git clone <URL_DO_REPOSITORIO>
+cd lab-agente-financeiro
+pip install -r requirements.txt
+```
 
-Este projeto demonstra a construção de um agente financeiro completo, desde a concepção até a prototipação, aplicando boas práticas de engenharia de prompt, uso de dados e experiência do usuário.
+### Execução
+
+```
+python src/app.py
+```
+
+## 📌 Limitações Atuais
+
+Este projeto possui caráter educacional e prototipado. Atualmente:
+
+- Utiliza dados mockados para simulação
+- Não realiza integração com APIs bancárias reais
+- Não substitui orientação financeira profissional
+- O foco está na experiência do agente, estruturação da solução e qualidade das respostas
+
+## 🚀 Diferenciais do Projeto
+
+Os principais diferenciais da FIA são:
+
+Personalização baseada em dados
+Comunicação humanizada e didática
+Foco em educação financeira prática
+Preocupação com segurança e confiabilidade
+Estrutura orientada à redução de alucinações
+
+## 🔮 Próximos Passos
+
+Como evolução do projeto, os próximos passos podem incluir:
+
+Integração com banco de dados real
+Implementação de autenticação de usuário
+Criação de dashboard financeiro
+Expansão das métricas de avaliação
+Aprimoramento da rastreabilidade das respostas do agente
+
+## 🎯 Considerações Finais
+
+Este projeto demonstra a aplicação prática de IA generativa na construção de um assistente especializado em finanças, unindo personalização, segurança e utilidade em uma solução voltada à organização financeira do usuário.
