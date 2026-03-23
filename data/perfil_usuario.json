@@ -2,31 +2,55 @@
   "nome": "João Silva",
   "idade": 32,
   "profissao": "Analista de Sistemas",
-  "renda_mensal": 5000.00,
+  "renda_mensal": 5000.0,
 
   "perfil_financeiro": {
     "nivel_organizacao": "baixo",
     "controle_gastos": false,
-    "costuma_planejar": false
+    "costuma_planejar": false,
+    "nivel_conhecimento_financeiro": "basico",
+    "comportamento_de_consumo": "gastos pouco planejados",
+    "frequencia_acompanhamento_financeiro": "baixa"
   },
 
   "objetivo_principal": "Controlar gastos e criar uma reserva de emergência",
 
   "situacao_atual": {
-    "saldo_medio_mensal": 500,
-    "gastos_maiores_categorias": ["alimentacao", "lazer"],
-    "possui_dividas": false
+    "saldo_medio_mensal": 500.0,
+    "categorias_com_maior_gasto": [
+      "alimentacao",
+      "lazer"
+    ],
+    "possui_dividas": false,
+    "possui_reserva_emergencia": false
+  },
+
+  "principais_dores": [
+    "dificuldade em acompanhar os gastos do mês",
+    "baixo planejamento financeiro",
+    "ausencia de reserva para imprevistos"
+  ],
+
+  "preferencia_de_abordagem": {
+    "tom": "didatico e acessivel",
+    "nivel_detalhamento": "medio",
+    "aceita_sugestoes_praticas": true
   },
 
   "metas": [
     {
       "meta": "Criar reserva de emergência",
-      "valor_necessario": 10000.00,
-      "prazo": "2026-06"
+      "descricao": "Construir uma reserva para lidar com imprevistos financeiros com mais segurança",
+      "valor_necessario": 10000.0,
+      "prazo": "2026-06",
+      "prioridade": "alta"
     },
     {
       "meta": "Reduzir gastos com lazer",
-      "descricao": "Diminuir despesas com restaurantes e streaming"
+      "descricao": "Diminuir despesas com restaurantes, streaming e outros gastos não essenciais",
+      "valor_necessario": null,
+      "prazo": null,
+      "prioridade": "media"
     }
   ]
 }
